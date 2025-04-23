@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA1891DE2DB977E700F2D243 /* HawcxSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CA1891DD2DB977E700F2D243 /* HawcxSDK */; };
+		CA1A76272DB83E59001EAE64 /* SharedAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A76262DB83E59001EAE64 /* SharedAuthManager.swift */; };
+		CA1A76312DB8845E001EAE64 /* LoadingAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A76302DB8845E001EAE64 /* LoadingAlertModifier.swift */; };
+		CA97A6302DAD58AF0072DCA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA97A62B2DAD58AF0072DCA7 /* Preview Assets.xcassets */; };
+		CA97A6312DAD58AF0072DCA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA97A62D2DAD58AF0072DCA7 /* Assets.xcassets */; };
+		CA97A6322DAD58AF0072DCA7 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6282DAD58AF0072DCA7 /* AppViewModel.swift */; };
+		CA97A6332DAD58AF0072DCA7 /* HawcxDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6292DAD58AF0072DCA7 /* HawcxDemoApp.swift */; };
+		CA97A6352DAD58CB0072DCA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6342DAD58CB0072DCA7 /* ContentView.swift */; };
+		CA97A63C2DAD59320072DCA7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A63B2DAD59320072DCA7 /* LoginView.swift */; };
+		CA97A63E2DAD59470072DCA7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A63D2DAD59470072DCA7 /* SignUpView.swift */; };
+		CA97A6422DAD59750072DCA7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6412DAD59750072DCA7 /* HomeView.swift */; };
+		CA97A6502DAD5A170072DCA7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A64F2DAD5A170072DCA7 /* Models.swift */; };
+		CA97A6562DAD5AD40072DCA7 /* BiometricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6552DAD5AD40072DCA7 /* BiometricService.swift */; };
+		CA97A6582DAD5AEB0072DCA7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6572DAD5AEB0072DCA7 /* Constants.swift */; };
+		CA97A65A2DAD5B2F0072DCA7 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6592DAD5B2F0072DCA7 /* CustomAlertView.swift */; };
+		CA97A65C2DAD5B480072DCA7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A65B2DAD5B480072DCA7 /* View+Extensions.swift */; };
+		CA97A6702DAEC67B0072DCA7 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A66F2DAEC67B0072DCA7 /* LoadingButton.swift */; };
+		CA97A6762DAEDB610072DCA7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CA97A6752DAEDB610072DCA7 /* Lottie */; };
+		CA97A6872DAF157D0072DCA7 /* HawcxFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */; };
+		CA97A6992DB04F190072DCA7 /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6982DB04F190072DCA7 /* AddDeviceView.swift */; };
+		CA97A6BC2DB04F9A0072DCA7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */; };
+		CA97A6BD2DB04F9A0072DCA7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */; };
+		CA97A6C02DB04F9A0072DCA7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */; };
+		CA97A6C32DB04FA80072DCA7 /* AddDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA97A6072DAD580C0072DCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA97A5ED2DAD580B0072DCA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA97A5F42DAD580B0072DCA7;
+			remoteInfo = HawcxDemoApp;
+		};
+		CA97A6112DAD580C0072DCA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA97A5ED2DAD580B0072DCA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA97A5F42DAD580B0072DCA7;
+			remoteInfo = HawcxDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA97A6622DAD5CDF0072DCA7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA1A76262DB83E59001EAE64 /* SharedAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAuthManager.swift; sourceTree = "<group>"; };
+		CA1A76302DB8845E001EAE64 /* LoadingAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAlertModifier.swift; sourceTree = "<group>"; };
+		CA97A5F52DAD580B0072DCA7 /* HawcxDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HawcxDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA97A6062DAD580C0072DCA7 /* HawcxDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HawcxDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA97A6102DAD580C0072DCA7 /* HawcxDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HawcxDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA97A6282DAD58AF0072DCA7 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		CA97A6292DAD58AF0072DCA7 /* HawcxDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawcxDemoApp.swift; sourceTree = "<group>"; };
+		CA97A62B2DAD58AF0072DCA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA97A62D2DAD58AF0072DCA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA97A62E2DAD58AF0072DCA7 /* HawcxDemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HawcxDemoApp.entitlements; sourceTree = "<group>"; };
+		CA97A6342DAD58CB0072DCA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA97A63B2DAD59320072DCA7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CA97A63D2DAD59470072DCA7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CA97A6412DAD59750072DCA7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CA97A64F2DAD5A170072DCA7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CA97A6552DAD5AD40072DCA7 /* BiometricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricService.swift; sourceTree = "<group>"; };
+		CA97A6572DAD5AEB0072DCA7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CA97A6592DAD5B2F0072DCA7 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		CA97A65B2DAD5B480072DCA7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		CA97A66F2DAEC67B0072DCA7 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawcxFooterView.swift; sourceTree = "<group>"; };
+		CA97A6982DB04F190072DCA7 /* AddDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
+		CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CA97A6092DAD580C0072DCA7 /* HawcxDemoAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HawcxDemoAppTests;
+			sourceTree = "<group>";
+		};
+		CA97A6132DAD580C0072DCA7 /* HawcxDemoAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HawcxDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		CA97A6712DAED8D30072DCA7 /* LottieFiles */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA97A5F22DAD580B0072DCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1891DE2DB977E700F2D243 /* HawcxSDK in Frameworks */,
+				CA97A6762DAEDB610072DCA7 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA97A6032DAD580C0072DCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA97A60D2DAD580C0072DCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA97A5EC2DAD580B0072DCA7 = {
+			isa = PBXGroup;
+			children = (
+				CA97A62F2DAD58AF0072DCA7 /* HawcxDemoApp */,
+				CA97A6092DAD580C0072DCA7 /* HawcxDemoAppTests */,
+				CA97A6132DAD580C0072DCA7 /* HawcxDemoAppUITests */,
+				CA97A65F2DAD5CDF0072DCA7 /* Frameworks */,
+				CA97A5F62DAD580B0072DCA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA97A5F62DAD580B0072DCA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A5F52DAD580B0072DCA7 /* HawcxDemoApp.app */,
+				CA97A6062DAD580C0072DCA7 /* HawcxDemoAppTests.xctest */,
+				CA97A6102DAD580C0072DCA7 /* HawcxDemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA97A62A2DAD58AF0072DCA7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A6292DAD58AF0072DCA7 /* HawcxDemoApp.swift */,
+				CA97A6282DAD58AF0072DCA7 /* AppViewModel.swift */,
+				CA97A6342DAD58CB0072DCA7 /* ContentView.swift */,
+				CA1A76262DB83E59001EAE64 /* SharedAuthManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CA97A62C2DAD58AF0072DCA7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A62B2DAD58AF0072DCA7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA97A62F2DAD58AF0072DCA7 /* HawcxDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A62A2DAD58AF0072DCA7 /* App */,
+				CA97A6362DAD58E00072DCA7 /* Views */,
+				CA97A6BB2DB04F9A0072DCA7 /* ViewModels */,
+				CA97A6382DAD58FE0072DCA7 /* Models */,
+				CA97A6392DAD590B0072DCA7 /* Services */,
+				CA97A63A2DAD591A0072DCA7 /* Utils */,
+				CA97A6712DAED8D30072DCA7 /* LottieFiles */,
+				CA97A62C2DAD58AF0072DCA7 /* Preview Content */,
+				CA97A62D2DAD58AF0072DCA7 /* Assets.xcassets */,
+				CA97A62E2DAD58AF0072DCA7 /* HawcxDemoApp.entitlements */,
+			);
+			path = HawcxDemoApp;
+			sourceTree = "<group>";
+		};
+		CA97A6362DAD58E00072DCA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A63B2DAD59320072DCA7 /* LoginView.swift */,
+				CA97A63D2DAD59470072DCA7 /* SignUpView.swift */,
+				CA97A6982DB04F190072DCA7 /* AddDeviceView.swift */,
+				CA97A6412DAD59750072DCA7 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA97A6382DAD58FE0072DCA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A64F2DAD5A170072DCA7 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA97A6392DAD590B0072DCA7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A6552DAD5AD40072DCA7 /* BiometricService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA97A63A2DAD591A0072DCA7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A6572DAD5AEB0072DCA7 /* Constants.swift */,
+				CA97A6592DAD5B2F0072DCA7 /* CustomAlertView.swift */,
+				CA97A65B2DAD5B480072DCA7 /* View+Extensions.swift */,
+				CA97A66F2DAEC67B0072DCA7 /* LoadingButton.swift */,
+				CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */,
+				CA1A76302DB8845E001EAE64 /* LoadingAlertModifier.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CA97A65F2DAD5CDF0072DCA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA97A6BB2DB04F9A0072DCA7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */,
+				CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */,
+				CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */,
+				CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA97A5F42DAD580B0072DCA7 /* HawcxDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA97A61A2DAD580C0072DCA7 /* Build configuration list for PBXNativeTarget "HawcxDemoApp" */;
+			buildPhases = (
+				CA97A5F12DAD580B0072DCA7 /* Sources */,
+				CA97A5F22DAD580B0072DCA7 /* Frameworks */,
+				CA97A5F32DAD580B0072DCA7 /* Resources */,
+				CA97A6622DAD5CDF0072DCA7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CA97A6712DAED8D30072DCA7 /* LottieFiles */,
+			);
+			name = HawcxDemoApp;
+			packageProductDependencies = (
+				CA97A6752DAEDB610072DCA7 /* Lottie */,
+				CA1891DD2DB977E700F2D243 /* HawcxSDK */,
+			);
+			productName = HawcxDemoApp;
+			productReference = CA97A5F52DAD580B0072DCA7 /* HawcxDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA97A6052DAD580C0072DCA7 /* HawcxDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA97A61D2DAD580C0072DCA7 /* Build configuration list for PBXNativeTarget "HawcxDemoAppTests" */;
+			buildPhases = (
+				CA97A6022DAD580C0072DCA7 /* Sources */,
+				CA97A6032DAD580C0072DCA7 /* Frameworks */,
+				CA97A6042DAD580C0072DCA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA97A6082DAD580C0072DCA7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA97A6092DAD580C0072DCA7 /* HawcxDemoAppTests */,
+			);
+			name = HawcxDemoAppTests;
+			packageProductDependencies = (
+			);
+			productName = HawcxDemoAppTests;
+			productReference = CA97A6062DAD580C0072DCA7 /* HawcxDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA97A60F2DAD580C0072DCA7 /* HawcxDemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA97A6202DAD580C0072DCA7 /* Build configuration list for PBXNativeTarget "HawcxDemoAppUITests" */;
+			buildPhases = (
+				CA97A60C2DAD580C0072DCA7 /* Sources */,
+				CA97A60D2DAD580C0072DCA7 /* Frameworks */,
+				CA97A60E2DAD580C0072DCA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA97A6122DAD580C0072DCA7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA97A6132DAD580C0072DCA7 /* HawcxDemoAppUITests */,
+			);
+			name = HawcxDemoAppUITests;
+			packageProductDependencies = (
+			);
+			productName = HawcxDemoAppUITests;
+			productReference = CA97A6102DAD580C0072DCA7 /* HawcxDemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA97A5ED2DAD580B0072DCA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					CA97A5F42DAD580B0072DCA7 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CA97A6052DAD580C0072DCA7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CA97A5F42DAD580B0072DCA7;
+					};
+					CA97A60F2DAD580C0072DCA7 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CA97A5F42DAD580B0072DCA7;
+					};
+				};
+			};
+			buildConfigurationList = CA97A5F02DAD580B0072DCA7 /* Build configuration list for PBXProject "HawcxDemoApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA97A5EC2DAD580B0072DCA7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CA97A6742DAEDB610072DCA7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				CA1891DC2DB977E700F2D243 /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CA97A5F62DAD580B0072DCA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA97A5F42DAD580B0072DCA7 /* HawcxDemoApp */,
+				CA97A6052DAD580C0072DCA7 /* HawcxDemoAppTests */,
+				CA97A60F2DAD580C0072DCA7 /* HawcxDemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA97A5F32DAD580B0072DCA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA97A6302DAD58AF0072DCA7 /* Preview Assets.xcassets in Resources */,
+				CA97A6312DAD58AF0072DCA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA97A6042DAD580C0072DCA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA97A60E2DAD580C0072DCA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA97A5F12DAD580B0072DCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA97A6C32DB04FA80072DCA7 /* AddDeviceViewModel.swift in Sources */,
+				CA97A6322DAD58AF0072DCA7 /* AppViewModel.swift in Sources */,
+				CA97A6422DAD59750072DCA7 /* HomeView.swift in Sources */,
+				CA97A63E2DAD59470072DCA7 /* SignUpView.swift in Sources */,
+				CA97A6332DAD58AF0072DCA7 /* HawcxDemoApp.swift in Sources */,
+				CA97A63C2DAD59320072DCA7 /* LoginView.swift in Sources */,
+				CA97A6562DAD5AD40072DCA7 /* BiometricService.swift in Sources */,
+				CA97A6352DAD58CB0072DCA7 /* ContentView.swift in Sources */,
+				CA1A76272DB83E59001EAE64 /* SharedAuthManager.swift in Sources */,
+				CA97A6992DB04F190072DCA7 /* AddDeviceView.swift in Sources */,
+				CA97A65A2DAD5B2F0072DCA7 /* CustomAlertView.swift in Sources */,
+				CA97A6702DAEC67B0072DCA7 /* LoadingButton.swift in Sources */,
+				CA97A6502DAD5A170072DCA7 /* Models.swift in Sources */,
+				CA97A6872DAF157D0072DCA7 /* HawcxFooterView.swift in Sources */,
+				CA97A65C2DAD5B480072DCA7 /* View+Extensions.swift in Sources */,
+				CA97A6BC2DB04F9A0072DCA7 /* HomeViewModel.swift in Sources */,
+				CA1A76312DB8845E001EAE64 /* LoadingAlertModifier.swift in Sources */,
+				CA97A6BD2DB04F9A0072DCA7 /* LoginViewModel.swift in Sources */,
+				CA97A6C02DB04F9A0072DCA7 /* SignUpViewModel.swift in Sources */,
+				CA97A6582DAD5AEB0072DCA7 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA97A6022DAD580C0072DCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA97A60C2DAD580C0072DCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA97A6082DAD580C0072DCA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA97A5F42DAD580B0072DCA7 /* HawcxDemoApp */;
+			targetProxy = CA97A6072DAD580C0072DCA7 /* PBXContainerItemProxy */;
+		};
+		CA97A6122DAD580C0072DCA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA97A5F42DAD580B0072DCA7 /* HawcxDemoApp */;
+			targetProxy = CA97A6112DAD580C0072DCA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA97A6182DAD580C0072DCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA97A6192DAD580C0072DCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CA97A61B2DAD580C0072DCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HawcxDemoApp/HawcxDemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HawcxDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes for secure web login.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hawcx needs Face ID to securely authenticate you and protect your account information.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		CA97A61C2DAD580C0072DCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HawcxDemoApp/HawcxDemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HawcxDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes for secure web login.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hawcx needs Face ID to securely authenticate you and protect your account information.";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		CA97A61E2DAD580C0072DCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HawcxDemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HawcxDemoApp";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		CA97A61F2DAD580C0072DCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HawcxDemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HawcxDemoApp";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		CA97A6212DAD580C0072DCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = HawcxDemoApp;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		CA97A6222DAD580C0072DCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = HawcxDemoApp;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA97A5F02DAD580B0072DCA7 /* Build configuration list for PBXProject "HawcxDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA97A6182DAD580C0072DCA7 /* Debug */,
+				CA97A6192DAD580C0072DCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA97A61A2DAD580C0072DCA7 /* Build configuration list for PBXNativeTarget "HawcxDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA97A61B2DAD580C0072DCA7 /* Debug */,
+				CA97A61C2DAD580C0072DCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA97A61D2DAD580C0072DCA7 /* Build configuration list for PBXNativeTarget "HawcxDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA97A61E2DAD580C0072DCA7 /* Debug */,
+				CA97A61F2DAD580C0072DCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA97A6202DAD580C0072DCA7 /* Build configuration list for PBXNativeTarget "HawcxDemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA97A6212DAD580C0072DCA7 /* Debug */,
+				CA97A6222DAD580C0072DCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA1891DC2DB977E700F2D243 /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hawcx/hawcx_ios_sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		CA97A6742DAEDB610072DCA7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA1891DD2DB977E700F2D243 /* HawcxSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA1891DC2DB977E700F2D243 /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */;
+			productName = HawcxSDK;
+		};
+		CA97A6752DAEDB610072DCA7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA97A6742DAEDB610072DCA7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA97A5ED2DAD580B0072DCA7 /* Project object */;
+}

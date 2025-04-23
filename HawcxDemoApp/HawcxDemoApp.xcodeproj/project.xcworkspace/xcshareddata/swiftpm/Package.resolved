@@ -1,0 +1,24 @@
+{
+  "originHash" : "9700a7f549047967d3d31b76178f2e16bf74d8a0015289c28288cbae8c076936",
+  "pins" : [
+    {
+      "identity" : "hawcx_ios_sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hawcx/hawcx_ios_sdk.git",
+      "state" : {
+        "revision" : "d212fc635d82f13aea1dc16ea1158e4edd2d5ee5",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "revision" : "047aa81b77adcbf583a966dfef620d17650cc656",
+        "version" : "4.5.1"
+      }
+    }
+  ],
+  "version" : 3
+}
