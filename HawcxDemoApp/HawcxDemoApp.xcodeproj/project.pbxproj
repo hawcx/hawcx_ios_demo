@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA1891DE2DB977E700F2D243 /* HawcxSDK in Frameworks */ = {isa = PBXBuildFile; productRef = CA1891DD2DB977E700F2D243 /* HawcxSDK */; };
 		CA1A76272DB83E59001EAE64 /* SharedAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A76262DB83E59001EAE64 /* SharedAuthManager.swift */; };
 		CA1A76312DB8845E001EAE64 /* LoadingAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A76302DB8845E001EAE64 /* LoadingAlertModifier.swift */; };
+		CA7E697B2DC2BE1300C920CB /* ChikflixTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E697A2DC2BE1300C920CB /* ChikflixTheme.swift */; };
+		CA7E697D2DC2C38300C920CB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E697C2DC2C38300C920CB /* WelcomeView.swift */; };
+		CA8FF79C2DF95C0200E3A06F /* HawcxFramework in Frameworks */ = {isa = PBXBuildFile; productRef = CA8FF79B2DF95C0200E3A06F /* HawcxFramework */; };
 		CA97A6302DAD58AF0072DCA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA97A62B2DAD58AF0072DCA7 /* Preview Assets.xcassets */; };
 		CA97A6312DAD58AF0072DCA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA97A62D2DAD58AF0072DCA7 /* Assets.xcassets */; };
 		CA97A6322DAD58AF0072DCA7 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6282DAD58AF0072DCA7 /* AppViewModel.swift */; };
 		CA97A6332DAD58AF0072DCA7 /* HawcxDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6292DAD58AF0072DCA7 /* HawcxDemoApp.swift */; };
 		CA97A6352DAD58CB0072DCA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6342DAD58CB0072DCA7 /* ContentView.swift */; };
-		CA97A63C2DAD59320072DCA7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A63B2DAD59320072DCA7 /* LoginView.swift */; };
-		CA97A63E2DAD59470072DCA7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A63D2DAD59470072DCA7 /* SignUpView.swift */; };
 		CA97A6422DAD59750072DCA7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6412DAD59750072DCA7 /* HomeView.swift */; };
+		CA97A6442DAD598C0072DCA7 /* WebLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6432DAD598C0072DCA7 /* WebLoginView.swift */; };
 		CA97A6502DAD5A170072DCA7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A64F2DAD5A170072DCA7 /* Models.swift */; };
 		CA97A6562DAD5AD40072DCA7 /* BiometricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6552DAD5AD40072DCA7 /* BiometricService.swift */; };
 		CA97A6582DAD5AEB0072DCA7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6572DAD5AEB0072DCA7 /* Constants.swift */; };
@@ -25,12 +26,17 @@
 		CA97A65C2DAD5B480072DCA7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A65B2DAD5B480072DCA7 /* View+Extensions.swift */; };
 		CA97A6702DAEC67B0072DCA7 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A66F2DAEC67B0072DCA7 /* LoadingButton.swift */; };
 		CA97A6762DAEDB610072DCA7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CA97A6752DAEDB610072DCA7 /* Lottie */; };
+		CA97A6852DAF001C0072DCA7 /* RealQRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6842DAF001C0072DCA7 /* RealQRScannerView.swift */; };
 		CA97A6872DAF157D0072DCA7 /* HawcxFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */; };
-		CA97A6992DB04F190072DCA7 /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6982DB04F190072DCA7 /* AddDeviceView.swift */; };
 		CA97A6BC2DB04F9A0072DCA7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */; };
 		CA97A6BD2DB04F9A0072DCA7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */; };
+		CA97A6BE2DB04F9A0072DCA7 /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B72DB04F9A0072DCA7 /* QRScannerViewModel.swift */; };
 		CA97A6C02DB04F9A0072DCA7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */; };
+		CA97A6C12DB04F9A0072DCA7 /* WebLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6BA2DB04F9A0072DCA7 /* WebLoginViewModel.swift */; };
 		CA97A6C32DB04FA80072DCA7 /* AddDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */; };
+		CAB5ADFA2DDD249E00BD883B /* AuthenticateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5ADF92DDD249E00BD883B /* AuthenticateViewModel.swift */; };
+		CAB5ADFC2DDD255700BD883B /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5ADFB2DDD255700BD883B /* AuthenticateView.swift */; };
+		CAB5AE512DDE814A00BD883B /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5AE502DDE814A00BD883B /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,9 @@
 /* Begin PBXFileReference section */
 		CA1A76262DB83E59001EAE64 /* SharedAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAuthManager.swift; sourceTree = "<group>"; };
 		CA1A76302DB8845E001EAE64 /* LoadingAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAlertModifier.swift; sourceTree = "<group>"; };
+		CA7E697A2DC2BE1300C920CB /* ChikflixTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChikflixTheme.swift; sourceTree = "<group>"; };
+		CA7E697C2DC2C38300C920CB /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		CA7E69862DC3054100C920CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CA97A5F52DAD580B0072DCA7 /* HawcxDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HawcxDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA97A6062DAD580C0072DCA7 /* HawcxDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HawcxDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA97A6102DAD580C0072DCA7 /* HawcxDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HawcxDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,21 +84,25 @@
 		CA97A62D2DAD58AF0072DCA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA97A62E2DAD58AF0072DCA7 /* HawcxDemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HawcxDemoApp.entitlements; sourceTree = "<group>"; };
 		CA97A6342DAD58CB0072DCA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CA97A63B2DAD59320072DCA7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		CA97A63D2DAD59470072DCA7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CA97A6412DAD59750072DCA7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CA97A6432DAD598C0072DCA7 /* WebLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoginView.swift; sourceTree = "<group>"; };
 		CA97A64F2DAD5A170072DCA7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CA97A6552DAD5AD40072DCA7 /* BiometricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricService.swift; sourceTree = "<group>"; };
 		CA97A6572DAD5AEB0072DCA7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CA97A6592DAD5B2F0072DCA7 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		CA97A65B2DAD5B480072DCA7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		CA97A66F2DAEC67B0072DCA7 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		CA97A6842DAF001C0072DCA7 /* RealQRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealQRScannerView.swift; sourceTree = "<group>"; };
 		CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawcxFooterView.swift; sourceTree = "<group>"; };
-		CA97A6982DB04F190072DCA7 /* AddDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
 		CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CA97A6B72DB04F9A0072DCA7 /* QRScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewModel.swift; sourceTree = "<group>"; };
 		CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		CA97A6BA2DB04F9A0072DCA7 /* WebLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoginViewModel.swift; sourceTree = "<group>"; };
 		CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewModel.swift; sourceTree = "<group>"; };
+		CAB5ADF92DDD249E00BD883B /* AuthenticateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewModel.swift; sourceTree = "<group>"; };
+		CAB5ADFB2DDD255700BD883B /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
+		CAB5AE502DDE814A00BD883B /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -115,8 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA1891DE2DB977E700F2D243 /* HawcxSDK in Frameworks */,
 				CA97A6762DAEDB610072DCA7 /* Lottie in Frameworks */,
+				CA8FF79C2DF95C0200E3A06F /* HawcxFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +193,7 @@
 		CA97A62F2DAD58AF0072DCA7 /* HawcxDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA7E69862DC3054100C920CB /* Info.plist */,
 				CA97A62A2DAD58AF0072DCA7 /* App */,
 				CA97A6362DAD58E00072DCA7 /* Views */,
 				CA97A6BB2DB04F9A0072DCA7 /* ViewModels */,
@@ -197,10 +211,11 @@
 		CA97A6362DAD58E00072DCA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CA97A63B2DAD59320072DCA7 /* LoginView.swift */,
-				CA97A63D2DAD59470072DCA7 /* SignUpView.swift */,
-				CA97A6982DB04F190072DCA7 /* AddDeviceView.swift */,
+				CA7E697C2DC2C38300C920CB /* WelcomeView.swift */,
+				CAB5ADFB2DDD255700BD883B /* AuthenticateView.swift */,
 				CA97A6412DAD59750072DCA7 /* HomeView.swift */,
+				CA97A6432DAD598C0072DCA7 /* WebLoginView.swift */,
+				CA97A6842DAF001C0072DCA7 /* RealQRScannerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +245,8 @@
 				CA97A66F2DAEC67B0072DCA7 /* LoadingButton.swift */,
 				CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */,
 				CA1A76302DB8845E001EAE64 /* LoadingAlertModifier.swift */,
+				CA7E697A2DC2BE1300C920CB /* ChikflixTheme.swift */,
+				CAB5AE502DDE814A00BD883B /* ToastView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -244,10 +261,13 @@
 		CA97A6BB2DB04F9A0072DCA7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5ADF92DDD249E00BD883B /* AuthenticateViewModel.swift */,
 				CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */,
 				CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */,
 				CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */,
 				CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */,
+				CA97A6B72DB04F9A0072DCA7 /* QRScannerViewModel.swift */,
+				CA97A6BA2DB04F9A0072DCA7 /* WebLoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -274,7 +294,7 @@
 			name = HawcxDemoApp;
 			packageProductDependencies = (
 				CA97A6752DAEDB610072DCA7 /* Lottie */,
-				CA1891DD2DB977E700F2D243 /* HawcxSDK */,
+				CA8FF79B2DF95C0200E3A06F /* HawcxFramework */,
 			);
 			productName = HawcxDemoApp;
 			productReference = CA97A5F52DAD580B0072DCA7 /* HawcxDemoApp.app */;
@@ -360,7 +380,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				CA97A6742DAEDB610072DCA7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				CA1891DC2DB977E700F2D243 /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */,
+				CA8FF79A2DF95C0200E3A06F /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CA97A5F62DAD580B0072DCA7 /* Products */;
@@ -408,22 +428,28 @@
 				CA97A6C32DB04FA80072DCA7 /* AddDeviceViewModel.swift in Sources */,
 				CA97A6322DAD58AF0072DCA7 /* AppViewModel.swift in Sources */,
 				CA97A6422DAD59750072DCA7 /* HomeView.swift in Sources */,
-				CA97A63E2DAD59470072DCA7 /* SignUpView.swift in Sources */,
 				CA97A6332DAD58AF0072DCA7 /* HawcxDemoApp.swift in Sources */,
-				CA97A63C2DAD59320072DCA7 /* LoginView.swift in Sources */,
+				CA7E697B2DC2BE1300C920CB /* ChikflixTheme.swift in Sources */,
+				CA7E697D2DC2C38300C920CB /* WelcomeView.swift in Sources */,
 				CA97A6562DAD5AD40072DCA7 /* BiometricService.swift in Sources */,
 				CA97A6352DAD58CB0072DCA7 /* ContentView.swift in Sources */,
+				CA97A6852DAF001C0072DCA7 /* RealQRScannerView.swift in Sources */,
 				CA1A76272DB83E59001EAE64 /* SharedAuthManager.swift in Sources */,
-				CA97A6992DB04F190072DCA7 /* AddDeviceView.swift in Sources */,
+				CA97A6442DAD598C0072DCA7 /* WebLoginView.swift in Sources */,
 				CA97A65A2DAD5B2F0072DCA7 /* CustomAlertView.swift in Sources */,
 				CA97A6702DAEC67B0072DCA7 /* LoadingButton.swift in Sources */,
 				CA97A6502DAD5A170072DCA7 /* Models.swift in Sources */,
 				CA97A6872DAF157D0072DCA7 /* HawcxFooterView.swift in Sources */,
 				CA97A65C2DAD5B480072DCA7 /* View+Extensions.swift in Sources */,
 				CA97A6BC2DB04F9A0072DCA7 /* HomeViewModel.swift in Sources */,
+				CAB5AE512DDE814A00BD883B /* ToastView.swift in Sources */,
 				CA1A76312DB8845E001EAE64 /* LoadingAlertModifier.swift in Sources */,
 				CA97A6BD2DB04F9A0072DCA7 /* LoginViewModel.swift in Sources */,
+				CA97A6BE2DB04F9A0072DCA7 /* QRScannerViewModel.swift in Sources */,
+				CAB5ADFC2DDD255700BD883B /* AuthenticateView.swift in Sources */,
 				CA97A6C02DB04F9A0072DCA7 /* SignUpViewModel.swift in Sources */,
+				CA97A6C12DB04F9A0072DCA7 /* WebLoginViewModel.swift in Sources */,
+				CAB5ADFA2DDD249E00BD883B /* AuthenticateViewModel.swift in Sources */,
 				CA97A6582DAD5AEB0072DCA7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,10 +608,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HawcxDemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				DEVELOPMENT_TEAM = JGA956T82C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HawcxDemoApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CHIKFLIX;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes for secure web login.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hawcx needs Face ID to securely authenticate you and protect your account information.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -596,14 +624,15 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoApp;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HawcxDev.HawcxDemoAppDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -626,10 +655,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HawcxDemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2A9PJV4QBB;
+				DEVELOPMENT_TEAM = JGA956T82C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HawcxDemoApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CHIKFLIX;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes for secure web login.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hawcx needs Face ID to securely authenticate you and protect your account information.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -640,14 +671,15 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo.HawcxDemoApp;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HawcxDev.HawcxDemoAppDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -792,12 +824,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CA1891DC2DB977E700F2D243 /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */ = {
+		CA8FF79A2DF95C0200E3A06F /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hawcx/hawcx_ios_sdk.git";
+			repositoryURL = "https://github.com/hawcx/hawcx_ios_sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 4.0.2;
 			};
 		};
 		CA97A6742DAEDB610072DCA7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
@@ -811,10 +843,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CA1891DD2DB977E700F2D243 /* HawcxSDK */ = {
+		CA8FF79B2DF95C0200E3A06F /* HawcxFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA1891DC2DB977E700F2D243 /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */;
-			productName = HawcxSDK;
+			package = CA8FF79A2DF95C0200E3A06F /* XCRemoteSwiftPackageReference "hawcx_ios_sdk" */;
+			productName = HawcxFramework;
 		};
 		CA97A6752DAEDB610072DCA7 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;

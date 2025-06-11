@@ -11,7 +11,7 @@ extension View {
     func primaryButtonStyle() -> some View {
         self.buttonStyle(.borderedProminent)
            .controlSize(.large)
-           .tint(.accentColor) // Or a specific brand color
+           .tint(.red) // Or a specific brand color
     }
 
     func secondaryButtonStyle() -> some View {
@@ -37,3 +37,4 @@ extension AnyTransition {
 extension Notification.Name {
     static let authLoginResult = Notification.Name("AuthLoginResult")
 }
+

@@ -3,92 +3,87 @@
 //  HawcxDemoApp
 //
 //  Created by Agam Bhullar on 4/14/25.
+//  Updated for V4 SDK Logout
 //
-
 import SwiftUI
 import Combine
-import HawcxFramework // Import the SDK framework
+import HawcxFramework
 
-
-@MainActor // Ensure UI updates happen on the main thread
-class HomeViewModel: ObservableObject, DevSessionCallback { // Conform to DevSessionCallback
+@MainActor
+class HomeViewModel: ObservableObject {
     @Published var username: String = ""
-    @Published var devices: [DeviceSessionInfo] = [] // To hold fetched device details
-    @Published var isLoading: Bool = false // To show loading state
-    var onWebLoginRequested: (() -> Void)?
-
-    weak var appViewModel: AppViewModel? // Use weak reference
-    private var devSessionManager: DevSession // SDK component instance
+    @Published var isLoading: Bool = false
+    @Published var navigateToWebLogin: Bool = false
+    
+    weak var appViewModel: AppViewModel?
+    // No need for the full HawcxFramework instance if only using KeychainManager for JWTs
+    // and DevSession for device details.
+    private var hawcxSDK: HawcxSDK
 
     init(appViewModel: AppViewModel?) {
         self.appViewModel = appViewModel
-        self.devSessionManager = DevSession(apiKey: Constants.apiKey)
+        // API Key is passed to SDK components that need it.
+        // HawcxFramework facade is not strictly needed here if we directly use KeychainManager for JWTs
+        // and DevSessionManager.
+        self.hawcxSDK = HawcxSDK(projectApiKey: Constants.apiKey)
 
         if let loggedInUser = appViewModel?.loggedInUsername {
             self.username = loggedInUser
+            print("[HomeViewModel] Initialized for user: \(loggedInUser)")
         } else {
-            self.username = "User" // Default fallback
+            print("[HomeViewModel] Warning: Initialized without a logged-in username in AppViewModel.")
+            self.username = "User"
         }
     }
 
     convenience init() {
         self.init(appViewModel: nil)
-        self.username = "preview.user@example.com" // Example for preview
-        self.devices = [
-            DeviceSessionInfo(devId: "preview-dev-1", osDetails: "iOS 17 Preview", browserWithVersion: "Safari Preview", deviceType: "iPhone Preview", sessionDetails: [
-                SessionInfo(country: "Previewland", ipDetails: "127.0.0.1", isp: "Preview ISP", sessionLoginTime: "Now", osDetails: "iOS 17 Preview")
-            ])
-        ]
-    }
-
-    func fetchDeviceDetails() {
-        isLoading = true
-        devSessionManager.GetDeviceDetails(callback: self)
-    }
-
-    func logoutButtonTapped() {
-        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.lastUser)
-        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.accessToken) // If stored directly
-        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.refreshToken) // If stored directly
-        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.sdkDeviceDetails)
-        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.sdkSessionDetails)
-        if !username.isEmpty {
-            UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.biometricPrefix + username)
-        }
-
-        appViewModel?.logout() // AppViewModel should handle setting isLoggedIn to false and navigating
-    }
-
-    func navigateToWebLogin() {
-        onWebLoginRequested?()
+        self.username = "preview.user@example.com"
+        self.isLoading = false
     }
 
     nonisolated func onSuccess() {
-        // Explicit main thread dispatch for UI updates
+        print("[HomeViewModel] DevSessionCallback onSuccess received. Decoding from UserDefaults.")
         Task { @MainActor [weak self] in
             guard let self = self else { return }
             self.isLoading = false
-            do {
-                if let savedData = UserDefaults.standard.data(forKey: Constants.UserDefaultsKeys.sdkDeviceDetails) {
-                    let decoder = JSONDecoder()
-                    let decodedDevices = try decoder.decode([DeviceSessionInfo].self, from: savedData)
-                    self.devices = decodedDevices
-                } else {
-                    self.devices = []
-                }
-            } catch {
-                self.appViewModel?.alertInfo = AlertInfo(title: "Error", message: "Could not load device information.")
-                self.devices = []
-            }
         }
     }
-    
+
     nonisolated func showError() {
+        print("[HomeViewModel] DevSessionCallback showError received.")
         Task { @MainActor [weak self] in
             guard let self = self else { return }
             self.isLoading = false
-            self.appViewModel?.alertInfo = AlertInfo(title: "Error", message: "Failed to fetch device session information. Please try again later.")
-            self.devices = []
         }
+    }
+
+    func logoutButtonTapped() {
+        print("[HomeViewModel] Logout initiated for user: \(username)")
+
+        // 1. Use the new SDK function to clear only session tokens
+        if !username.isEmpty {
+            // Assuming 'HawcxSDK' instance is available or re-initialized
+            hawcxSDK.clearSessionTokens(forUser: username)
+            UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.biometricPrefix + username)
+        }
+        
+        // 2. Clear app's own "lastUser" for UI pre-fill if desired
+        //    (The SDK's clearLastLoggedInUser() could also be called if that's the intended pre-fill source)
+        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.lastUser)
+
+        // Clear other app-specific UserDefaults if any
+        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.accessToken) // App's copy
+        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.refreshToken) // App's copy
+        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.sdkDeviceDetails)
+        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.sdkSessionDetails)
+        UserDefaults.standard.removeObject(forKey: Constants.UserDefaultsKeys.webToken)
+
+        appViewModel?.logout()
+        print("[HomeViewModel] Standard logout processed using SDK's clearSessionTokens for user: \(username).")
+    }
+
+    func webLoginButtonTapped() {
+        navigateToWebLogin = true
     }
 }

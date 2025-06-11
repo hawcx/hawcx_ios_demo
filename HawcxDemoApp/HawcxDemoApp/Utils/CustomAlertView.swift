@@ -19,41 +19,56 @@ struct CustomAlertModifier: ViewModifier {
                 .disabled(isPresented) // Disable background content when alert is shown
 
             if isPresented {
-                Color.black.opacity(0.4)
+                // Dark overlay - darker than before for Netflix style
+                Color.black.opacity(0.7)
                     .edgesIgnoringSafeArea(.all)
                     .transition(.opacity)
                     .onTapGesture {
+                        // No action on tap - Netflix alerts don't dismiss on background tap
                     }
 
-                VStack(spacing: 15) {
+                VStack(spacing: 16) {
+                    // Title - bolder with Netflix-style
                     Text(title)
-                        .font(.headline)
-                        .foregroundColor(.primary)
-
-                    Text(message)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
+                        .font(.system(size: 18, weight: .bold))
+                        .foregroundColor(.white)
+                        .padding(.top, 5)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal)
 
+                    // Message - light gray with Netflix-style
+                    Text(message)
+                        .font(.system(size: 16, weight: .regular))
+                        .foregroundColor(Color.gray.opacity(0.9))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
+                        .padding(.bottom, 5)
+
+                    Divider()
+                        .background(Color.gray.opacity(0.3))
+                        .padding(.horizontal, -20)
+
+                    // Button - Netflix red style
                     Button(dismissButtonTitle) {
                         withAnimation {
                             isPresented = false
                         }
                     }
-                    .buttonStyle(.borderedProminent) // Use a prominent style for the dismiss button
-                    .tint(.accentColor) // Use the app's accent color
+                    .font(.system(size: 17, weight: .medium))
+                    .foregroundColor(ChikflixTheme.primary) // Netflix red
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
                 }
-                .padding()
-                .frame(maxWidth: 300) // Limit alert width
-                .background(Material.regular) // Use a blurred background material
-                .cornerRadius(15)
-                .shadow(radius: 10)
-                .transition(.scale.combined(with: .opacity)) // Add scale and opacity animation
+                .padding(.vertical, 20)
+                .padding(.horizontal, 20)
+                .frame(width: 300) // Fixed width for Netflix consistency
+                .background(ChikflixTheme.secondaryBackground) // Dark background
+                .cornerRadius(4) // Netflix uses more subtle corners
+                .shadow(color: Color.black.opacity(0.4), radius: 15, x: 0, y: 5) // More dramatic shadow
+                .transition(.opacity.combined(with: .scale(scale: 0.95, anchor: .center))) // More subtle animation
                 .zIndex(1) // Ensure alert is on top
             }
         }
-        .animation(.spring(), value: isPresented) // Animate the appearance/disappearance
+        .animation(.easeOut(duration: 0.2), value: isPresented) // Netflix uses quick, subtle animations
     }
 }
 

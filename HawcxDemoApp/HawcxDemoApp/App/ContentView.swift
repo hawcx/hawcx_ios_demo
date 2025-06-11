@@ -5,7 +5,7 @@
 //  Created by Agam Bhullar on 4/14/25.
 //
 
-
+// ContentView.swift
 import SwiftUI
 
 struct ContentView: View {
@@ -22,7 +22,8 @@ struct ContentView: View {
                 
                 case .loggedOut:
                     NavigationStack {
-                        LoginView(appViewModel: appViewModel)
+                        WelcomeView()
+                            .environmentObject(appViewModel)
                     }
                 
                 case .loggedIn:
@@ -34,8 +35,7 @@ struct ContentView: View {
             }
             .zIndex(0)
         }
-        // Regular dismissible alert
-        .customAlert(
+        .customAlert( // Regular dismissible alert
             isPresented: Binding<Bool>(
                 get: { appViewModel.alertInfo != nil },
                 set: { if !$0 { appViewModel.alertInfo = nil } }
@@ -43,8 +43,7 @@ struct ContentView: View {
             title: appViewModel.alertInfo?.title ?? "Error",
             message: appViewModel.alertInfo?.message ?? "An unknown error occurred."
         )
-        // Non-dismissible loading alert
-        .loadingAlert(
+        .loadingAlert( // Non-dismissible loading alert
             isPresented: Binding<Bool>(
                 get: { appViewModel.loadingAlertInfo != nil },
                 set: { if !$0 { appViewModel.loadingAlertInfo = nil } }
@@ -52,6 +51,7 @@ struct ContentView: View {
             title: appViewModel.loadingAlertInfo?.title ?? "Loading",
             message: appViewModel.loadingAlertInfo?.message ?? "Please wait..."
         )
+        .toastView(toast: $appViewModel.toast) // <<< ADD THIS MODIFIER FOR TOASTS
         .environmentObject(appViewModel)
         .animation(.easeInOut, value: appViewModel.authenticationState)
     }

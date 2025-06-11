@@ -8,7 +8,7 @@
 import Foundation
 
 struct Constants {
-    static let apiKey: String = "LmVKd2x5VXNLQWpFTUFOQzdaQzJTTnAwNGNlVk5TdHEwVUhTd3pBY1I4ZTRXM0w3M2dXTXJhMndHVjlqTHR0OFdiWTl6Zmk1d0F1MzlIODVUME0wR3JmcUsybHU4bF9kd25FUVZaUnFkZlhiQmVVU3VsaTZlaFdkaU5xdGlVbEppOWxJeHp6NHdVVVVqWWdzSTN4X1dfU1VmLlpyTDJqZy52cXVvUVMxVzZUemI5akFYY3ctMFAtT3NnSnk4dmhOLTJnci1CUnAtQlVEbEVoZlg1cW5IQ0tybmxtckQ0YkV4U2F0OUxRUk80YjJndHRfTHgyVzdsZw=="
+    static let apiKey: String = "d58RMFc3mVjcnGaF8wBbULal96iSdvTY"
 
 
     struct UserDefaultsKeys {
@@ -18,6 +18,8 @@ struct Constants {
         static let enableBiometricsAfterLogin = "enable_biometrics_after_login"
         static let accessToken = "accessToken"
         static let refreshToken = "refreshToken"
+        static let webToken = "web_token" // Also used by HawcxService webLogin
+
         static let sdkDeviceDetails = "devDetails"
         static let sdkSessionDetails = "sessionDetails"
     }

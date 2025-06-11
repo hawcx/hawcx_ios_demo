@@ -11,6 +11,9 @@ import SwiftUI
 struct HawcxDemoApp: App {
     @StateObject private var appViewModel = AppViewModel()
     @StateObject private var sharedAuthManager = SharedAuthManager()
+//    init() {
+//        loadRocketSimConnect()
+//    }
 
     var body: some Scene {
         WindowGroup {
@@ -20,3 +23,13 @@ struct HawcxDemoApp: App {
         }
     }
 }
+
+//private func loadRocketSimConnect() {
+//    #if DEBUG
+//    guard (Bundle(path: "/Applications/RocketSim.app/Contents/Frameworks/RocketSimConnectLinker.nocache.framework")?.load() == true) else {
+//        print("Failed to load linker framework")
+//        return
+//    }
+//    print("RocketSim Connect successfully linked")
+//    #endif
+//}

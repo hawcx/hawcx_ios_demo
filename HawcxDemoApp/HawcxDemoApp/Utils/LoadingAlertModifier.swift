@@ -12,40 +12,45 @@ struct LoadingAlertModifier: ViewModifier {
                 .disabled(isPresented) // Disable background content when alert is shown
             
             if isPresented {
-                Color.black.opacity(0.4)
+                // Dark overlay - darker for Netflix style
+                Color.black.opacity(0.7)
                     .edgesIgnoringSafeArea(.all)
                     .transition(.opacity)
                     .onTapGesture {
                         // No action - alert cannot be dismissed by tapping
                     }
                 
-                VStack(spacing: 15) {
+                VStack(spacing: 20) {
+                    // Title - bolder with Netflix-style
                     Text(title)
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                    
-                    Text(message)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
+                        .font(.system(size: 18, weight: .bold))
+                        .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal)
                     
-                    // Loading indicator instead of dismiss button
+                    // Message - light gray with Netflix-style
+                    Text(message)
+                        .font(.system(size: 16, weight: .regular))
+                        .foregroundColor(Color.gray.opacity(0.9))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
+                    
+                    // Netflix-style spinner with red color
                     ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle())
-                        .scaleEffect(1.2)
-                        .padding(.top, 8)
+                        .progressViewStyle(CircularProgressViewStyle(tint: ChikflixTheme.primary))
+                        .scaleEffect(1.0)
+                        .padding(.vertical, 5)
                 }
-                .padding()
-                .frame(maxWidth: 300) // Limit alert width
-                .background(Material.regular) // Use a blurred background material
-                .cornerRadius(15)
-                .shadow(radius: 10)
-                .transition(.scale.combined(with: .opacity)) // Add scale and opacity animation
+                .padding(.vertical, 25)
+                .padding(.horizontal, 25)
+                .frame(width: 300) // Fixed width for consistency with regular alert
+                .background(ChikflixTheme.secondaryBackground) // Dark background
+                .cornerRadius(4) // Netflix uses more subtle corners
+                .shadow(color: Color.black.opacity(0.4), radius: 15, x: 0, y: 5) // More dramatic shadow
+                .transition(.opacity.combined(with: .scale(scale: 0.95, anchor: .center))) // More subtle animation
                 .zIndex(1) // Ensure alert is on top
             }
         }
-        .animation(.spring(), value: isPresented) // Animate the appearance/disappearance
+        .animation(.easeOut(duration: 0.2), value: isPresented) // Netflix uses quick, subtle animations
     }
 }
 
