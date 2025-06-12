@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/platform-iOS_14.0+-blue.svg)](https://developer.apple.com/ios/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-A comprehensive demonstration application showcasing the [Hawcx iOS SDK V4](https://github.com/hawcx/hawcx-sdk-ios) for passwordless authentication with unified authentication flows.
+A comprehensive demonstration application showcasing the [Hawcx iOS SDK V4](https://github.com/hawcx/hawcx_ios_sdk) for passwordless authentication with unified authentication flows.
 
 <img src="Assets/Hawcx_Logo.png" alt="Hawcx Demo App" width="200" />
 
@@ -51,7 +51,7 @@ A comprehensive demonstration application showcasing the [Hawcx iOS SDK V4](http
 - Xcode 15.0+
 - iOS 14.0+ (V4 requirement)
 - Swift 5.9+
-- [Hawcx iOS SDK V4](https://github.com/hawcx/hawcx-sdk-ios)
+- [Hawcx iOS SDK V4](https://github.com/hawcx/hawcx_ios_sdk)
 
 ### Installation
 
@@ -88,7 +88,7 @@ struct Constants {
 
 ### Option 2: Direct Download
 
-1. Download the latest V4 release from [GitHub Releases](https://github.com/hawcx/hawcx-sdk-ios/releases)
+1. Download the latest V4 release from [GitHub Releases](https://github.com/hawcx/hawcx_ios_sdk/releases/latest)
 2. Drag `HawcxFramework.xcframework` into your project
 3. Ensure it's added to your target's "Frameworks, Libraries, and Embedded Content"
 4. Set "Embed" to "Embed & Sign"
