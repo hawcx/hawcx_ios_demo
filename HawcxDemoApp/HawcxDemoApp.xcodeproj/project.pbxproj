@@ -29,11 +29,8 @@
 		CA97A6852DAF001C0072DCA7 /* RealQRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6842DAF001C0072DCA7 /* RealQRScannerView.swift */; };
 		CA97A6872DAF157D0072DCA7 /* HawcxFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */; };
 		CA97A6BC2DB04F9A0072DCA7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */; };
-		CA97A6BD2DB04F9A0072DCA7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */; };
 		CA97A6BE2DB04F9A0072DCA7 /* QRScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B72DB04F9A0072DCA7 /* QRScannerViewModel.swift */; };
-		CA97A6C02DB04F9A0072DCA7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */; };
 		CA97A6C12DB04F9A0072DCA7 /* WebLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6BA2DB04F9A0072DCA7 /* WebLoginViewModel.swift */; };
-		CA97A6C32DB04FA80072DCA7 /* AddDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */; };
 		CAB5ADFA2DDD249E00BD883B /* AuthenticateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5ADF92DDD249E00BD883B /* AuthenticateViewModel.swift */; };
 		CAB5ADFC2DDD255700BD883B /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5ADFB2DDD255700BD883B /* AuthenticateView.swift */; };
 		CAB5AE512DDE814A00BD883B /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5AE502DDE814A00BD883B /* ToastView.swift */; };
@@ -95,11 +92,8 @@
 		CA97A6842DAF001C0072DCA7 /* RealQRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealQRScannerView.swift; sourceTree = "<group>"; };
 		CA97A6862DAF157D0072DCA7 /* HawcxFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawcxFooterView.swift; sourceTree = "<group>"; };
 		CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CA97A6B72DB04F9A0072DCA7 /* QRScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewModel.swift; sourceTree = "<group>"; };
-		CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CA97A6BA2DB04F9A0072DCA7 /* WebLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoginViewModel.swift; sourceTree = "<group>"; };
-		CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceViewModel.swift; sourceTree = "<group>"; };
 		CAB5ADF92DDD249E00BD883B /* AuthenticateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewModel.swift; sourceTree = "<group>"; };
 		CAB5ADFB2DDD255700BD883B /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
 		CAB5AE502DDE814A00BD883B /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
@@ -263,9 +257,6 @@
 			children = (
 				CAB5ADF92DDD249E00BD883B /* AuthenticateViewModel.swift */,
 				CA97A6B52DB04F9A0072DCA7 /* HomeViewModel.swift */,
-				CA97A6B62DB04F9A0072DCA7 /* LoginViewModel.swift */,
-				CA97A6B92DB04F9A0072DCA7 /* SignUpViewModel.swift */,
-				CA97A6C22DB04FA80072DCA7 /* AddDeviceViewModel.swift */,
 				CA97A6B72DB04F9A0072DCA7 /* QRScannerViewModel.swift */,
 				CA97A6BA2DB04F9A0072DCA7 /* WebLoginViewModel.swift */,
 			);
@@ -425,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA97A6C32DB04FA80072DCA7 /* AddDeviceViewModel.swift in Sources */,
 				CA97A6322DAD58AF0072DCA7 /* AppViewModel.swift in Sources */,
 				CA97A6422DAD59750072DCA7 /* HomeView.swift in Sources */,
 				CA97A6332DAD58AF0072DCA7 /* HawcxDemoApp.swift in Sources */,
@@ -444,10 +434,8 @@
 				CA97A6BC2DB04F9A0072DCA7 /* HomeViewModel.swift in Sources */,
 				CAB5AE512DDE814A00BD883B /* ToastView.swift in Sources */,
 				CA1A76312DB8845E001EAE64 /* LoadingAlertModifier.swift in Sources */,
-				CA97A6BD2DB04F9A0072DCA7 /* LoginViewModel.swift in Sources */,
 				CA97A6BE2DB04F9A0072DCA7 /* QRScannerViewModel.swift in Sources */,
 				CAB5ADFC2DDD255700BD883B /* AuthenticateView.swift in Sources */,
-				CA97A6C02DB04F9A0072DCA7 /* SignUpViewModel.swift in Sources */,
 				CA97A6C12DB04F9A0072DCA7 /* WebLoginViewModel.swift in Sources */,
 				CAB5ADFA2DDD249E00BD883B /* AuthenticateViewModel.swift in Sources */,
 				CA97A6582DAD5AEB0072DCA7 /* Constants.swift in Sources */,
